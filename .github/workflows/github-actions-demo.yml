@@ -4,14 +4,11 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Checkout code
+        uses: actions/checkout@v2
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.10'
-      - name: Navigate to directory
-        run: cd ../..
+          python-version: '3.10' # Remplacez "x" par la version de Python souhaitée
       - name: Run Python script
-        run: python job.py
+        run: python job.py # Remplacez "job.py" par le nom de votre fichier Python
