@@ -12,6 +12,6 @@ jobs:
         with:
           python-version: '3.10'
       - name: Navigate to directory
-        run: cd /home/namo/namo_exo/github-actions
+        run: cd ../..
       - name: Run Python script
         run: python job.py
