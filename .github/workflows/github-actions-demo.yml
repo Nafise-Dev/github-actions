@@ -9,6 +9,6 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.10' # Remplacez "x" par la version de Python souhaitée
+          python-version: '3.10'
       - name: Run Python script
-        run: python job.py # Remplacez "job.py" par le nom de votre fichier Python
+        run: python job.py
